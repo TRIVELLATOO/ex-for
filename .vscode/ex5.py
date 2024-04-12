@@ -1,8 +1,13 @@
-sexo = int(input("Digite seu sexo: (1 - Feminino ou 2 - Masculino)"))
-altura = float(input("Digite sua altura: "))
-if sexo == 1:
-    print ("Feminino")
-    print (f"O peso ideal e de {62.1 * altura - 44.7 :.2f}")
-else: 
-    print ("Masculino")
-    print (f"O peso ideal e de {72.7 * altura - 58 :.2f}")
+import random
+ni = []
+np = []
+
+for i in range (0, 10):
+    numero = random.randint(0, 100)
+    if numero % 2 == 0:
+        np.append(numero)
+    else:
+        ni.append(numero)
+
+print(f"Quantidade de nrs pares:{len(np)} ({np})")
+print(f"Quantidade de nrs ímpares: {len(ni)} ({ni})")

@@ -1,8 +1,9 @@
-idade = int(input("informe sua idade "))
+# nos divisores tem q entrar o 1 e o próprio número
+numero = int(input('Insira um numero para ver seus divisores: '))
+divisores = []
+for i in range(1, (numero + 1)):
+    if numero % i == 0:
+        divisores.append(i)
 
-if idade < 16:
-    print("nao  é eleitor")
-elif idade >= 16 and idade < 18 or idade > 65:
-    print("Eleitor facultativo")
-elif idade >= 18 or idade <= 65:
-    print("Eleitor obrigatório")
+
+print(f"divisores: {divisores}")

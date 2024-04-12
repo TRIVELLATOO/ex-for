@@ -1,12 +1,9 @@
-idade = int(input("informe sua idade: "))
-tempoServiço = int(input("informe o tempo de serviço: "))
+import random
+numeros = []
 
+for i in range(0,10):
+    numero = random.randint(0,100)
+    numeros.append(numero)
+    numeros.sort()
 
-if idade >= 65:
-    print("pode se aposentar")
-elif tempoServiço >= 30:
-    print("pode se aposentar")
-elif idade >= 60 and tempoServiço >= 25:
-    print("pode se aposentar")
-else:
-    print("não pode se aposentar")
+print(numeros)

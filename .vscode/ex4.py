@@ -1,9 +1,9 @@
-altura = float(input("Digite sua altura: "))
-if sexo == 1:
-    print ("Feminino")
-    print (f"O peso ideal e de {62.1 * altura - 44.7:.2f}")
-    print (f"O peso ideal e de {62.1 * altura - 44.7 :.2f}")
-else: 
-    print ("Masculino")
-    print (f"O peso ideal e de {72.7 * altura - 58:.2f}")
-    print (f"O peso ideal e de {72.7 * altura - 58 :.2f}")
+idades = []
+sm = 0
+md = 0
+for i in range (0,5):
+    idade = int(input(f"insira a {i+1} idade"))
+    idades.append(idade)
+    sm += idade
+    md = sm/len (idades)
+print(f"a média das idades é {md}")
